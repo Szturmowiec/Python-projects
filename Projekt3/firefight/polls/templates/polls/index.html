@@ -1,0 +1,29 @@
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <p>{{ question.question_text }}</p>
+        <form action="vote/" method="post">
+	{% csrf_token %}
+	{% for choice in question.choice_set.all %}
+    	<input type="radio" name="choice_{{question.id}}" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    	<label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+	{% endfor %}
+    {% endfor %}
+
+    <input type="submit" value="Vote" />
+	</form>
+    </ul>
+{% else %}
+    <p>You can vote in poll only once per day. Come back tomorrow.</p>
+{% endif %}
+
+<form method="post" action="/home/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Back to home page</button>
+    </form>
+
+    <br>
+    <br>
+
+<a href="/loggedout/">Logout</a>

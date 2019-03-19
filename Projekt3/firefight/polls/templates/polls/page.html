@@ -1,0 +1,18 @@
+{% block title %}Welcome to your account, {{user.username}}{% endblock %}
+
+<form method="post" action="/report/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Write work report</button>
+    <br>
+    </form>
+
+<form method="post" action="/polls/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Answer questions about work satisfaction</button>
+    </form>
+    <br>
+    <br>
+
+<a href="/loggedout/">Logout</a>

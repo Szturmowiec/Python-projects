@@ -1,0 +1,35 @@
+{% if latest_question_list2 %}
+    <ul>
+    {% for question in latest_question_list2 %}
+
+    	<p>{{ question.question }}</p>
+
+        <form method="POST" action="">
+		{% csrf_token %}
+		<input type="text" name="textfield">
+
+	{% endfor %}
+
+	{% csrf_token %}
+	</br>
+	<button type="submit">Upload</button>
+		</form>
+
+
+    </ul>
+{% else %}
+    <p>No questions available.</p>
+{% endif %}
+
+<br>
+
+<form method="post" action="/home/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Back to home page</button>
+    </form>
+
+    <br>
+    <br>
+
+<a href="/loggedout/">Logout</a>

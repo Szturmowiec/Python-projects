@@ -1,0 +1,15 @@
+<p>Thanks for your report. Only one report per day can be created, so please come back tommorow.</p>
+
+
+<br>
+
+<form method="post" action="/home/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Back to home page</button>
+    </form>
+
+    <br>
+    <br>
+
+<a href="/loggedout/">Logout</a>

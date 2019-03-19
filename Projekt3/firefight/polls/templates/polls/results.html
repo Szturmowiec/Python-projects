@@ -1,0 +1,22 @@
+
+
+{% for question in q_list %}
+<hl>{{question.question_text}}</hl>
+<ul>
+
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+{% endfor %}
+
+<form method="post" action="/home/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Back to home page</button>
+    </form>
+
+    <br>
+    <br>
+
+<a href="/loggedout/">Logout</a>

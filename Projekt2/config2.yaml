@@ -1,0 +1,8 @@
+- Perimeter :
+  perimeter.gun1 : Machine gun 1
+  perimeter.gun2 : Machine gun 2
+- Hill :
+  hill.infart : Anti-Infantry Artillery
+  hill.armart : Anti-Armored Artillery
+- Field :
+  field.mines : Minefield

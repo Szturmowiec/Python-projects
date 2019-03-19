@@ -1,0 +1,20 @@
+Adres strony: http://localhost:8000/
+
+Aplikacja stanowi panel dla pracowników w którym mogą oni pisać raporty z wykonanych zadań i wypełniać ankiety satysfakcji z pracy. Obecnie w systemie jest dwóch użytkowników:
+username: gunner, password: gunpowder
+username: stormtrooper, password: gunpowder (admin)
+
+Login as regular user umożliwia zalogowanie się do panelu. Stąd mamy dwie opcje - wypełnij ankietę i stwórz raport. W ankiecie po wypełnieniu odpowiedzi wyświetla się lista pytań wraz z ilością głosów na poszczególne odpowiedzi. Z kolei wypełnienie raportu po udzieleniu odpowiedzi na pytania stworzy plik tekstowy w formacie:
+pytanie1: odp1
+pytanie2: odp2
+...
+pytanie_n: opd_n
+
+This report was written by "username" at "creation_date"
+
+Raporty są obecnie zapisywane w katalogu głównym projektu (firefight)
+Zarówno raport jak i ankietę można wypełnić maksymalnie raz na dobę. Próba ponownego wypełnienia przed czasem skutkuje wyświetleniem odpowiedniego komunikatu.
+
+Pytania ankiety oraz formularza raportu tworzone są w panelu administratora (odpowiednio Questions i Report questions), podobnie dodawani są nowi użytkownicy (Add User).
+
+W celu zapewnienia funkcjonalności limitu wypełnień na dobę należy dla każdego użytkownika utworzyć dodatkowy profil (Profiles, dla gunner i stormtrooper takowe są już utworzone). Dodaje on do klasy User (na zasadzie relacji one to one) dodatkowe pola niezbędne dla tej funkcjonalności. Tworząc profil wystarczy tylko wybrać użytkownika (Key), nie trzeba (i w celu zapewnienia prawidłowego działania nie powinno się) uzupełniać pozostałych pól, służą one jedynie do debugowania.
