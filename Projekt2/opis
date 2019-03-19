@@ -1,5 +1,0 @@
-W programie wczytuję plik YAML sprawdzając czy nie pojawił się błąd (YAMLError).
-Następnie dla każdego elementu z wczytanej struktury wyszukuję nazwę pokoju (dla nazwy przyporządkowany element to None),
-i ostatecznie tworzę listę, w której element to nazwa pokoju i lista umieszczonych w nim urządzeń.
-Na podstawie tej listy buduję okno programu - dla każdego pokoju tworzę osobną zakładkę, w której wypisuję urządzenia
-z listy przypisanej do danego pokoju. Każde urządzenie można włączyć i wyłączyć wciskając przycisk - funkcja obsługi przycisku wysyła odpowiedni komunikat na adres broadcastowy i port 2018.
