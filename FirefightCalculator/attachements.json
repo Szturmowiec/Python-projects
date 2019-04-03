@@ -1,0 +1,32 @@
+[
+  {
+    "name": "bipod",
+    "short": 0,
+    "mid": 2,
+    "long": 2
+  },
+  {
+    "name": "grip",
+    "short": 1,
+    "mid": 1,
+    "long": 1
+  },
+  {
+    "name": "barrel",
+    "short": 1,
+    "mid": 1,
+    "long": 1
+  },
+  {
+    "name": "noctovisor",
+    "short": 3,
+    "mid": 2,
+    "long": 0
+  },
+  {
+    "name": "butt",
+    "short": -1,
+    "mid": 2,
+    "long": 2
+  }
+]

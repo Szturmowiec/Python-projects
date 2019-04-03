@@ -1,0 +1,30 @@
+[
+  {
+    "name": "M16A1",
+    "range": 600,
+    "accuracy": 2,
+    "cqb": -2,
+    "long": 1
+  },
+  {
+    "name": "M16A2",
+    "range": 600,
+    "accuracy": 3,
+    "cqb": -2,
+    "long": 1
+  },
+  {
+    "name": "M16A3",
+    "range": 600,
+    "accuracy": 3,
+    "cqb": -2,
+    "long": 2
+  },
+  {
+    "name": "M16A4",
+    "range": 600,
+    "accuracy": 3,
+    "cqb": -2,
+    "long": 2
+  }
+]

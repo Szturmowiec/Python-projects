@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Holo/RDS",
+    "short": 2,
+    "mid": 0,
+    "long": 0,
+    "range": 0
+  },
+  {
+    "name": "x2",
+    "short": -3,
+    "mid": 2,
+    "long": 0,
+    "range": 200
+  },
+  {
+    "name": "x3",
+    "short": -4,
+    "mid": 3,
+    "long": 1,
+    "range": 300
+  },
+  {
+    "name": "x4",
+    "short": -5,
+    "mid": 4,
+    "long": 2,
+    "range": 400
+  },
+  {
+    "name": "x6",
+    "short": -7,
+    "mid": 4,
+    "long": 3,
+    "range": 500
+  },
+  {
+    "name": "x8",
+    "short": -10,
+    "mid": 3,
+    "long": 4,
+    "range": 600
+  },
+  {
+    "name": "x12",
+    "short": -15,
+    "mid": 0,
+    "long": 6,
+    "range": 800
+  },
+  {
+    "name": "x16",
+    "short": -20,
+    "mid": -2,
+    "long": 8,
+    "range": 1000
+  }
+]

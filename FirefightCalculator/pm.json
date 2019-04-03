@@ -1,0 +1,16 @@
+[
+  {
+    "name": "HK MP7",
+    "range": 200,
+    "accuracy": 3,
+    "cqb": 2,
+    "long": -3
+  },
+  {
+    "name": "Uzi",
+    "range": 200,
+    "accuracy": 2,
+    "cqb": 2,
+    "long": -4
+  }
+]
